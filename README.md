@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# bigbuda-leads
 
-## Getting Started
+Herramienta interna de Bigbuda: informe automático de visibilidad online para
+usar en reuniones con leads. Con la URL, el rubro y la ciudad de un negocio,
+genera un diagnóstico con dos espejos:
 
-First, run the development server:
+- **Cómo te ve Google**: técnico, PageSpeed, plataforma detectada (WordPress,
+  Shopify, Wix, etc.) y análisis visual de conversión (CRO) con IA.
+- **Cómo te ve la IA**: si un asistente como ChatGPT recomienda al negocio con
+  búsquedas reales, y a qué competidores recomienda en su lugar.
+
+Es un fork con marca propia de la herramienta construida originalmente para
+el concurso "¿Te encuentran?" (repo `paulete-BB/informes-seo`, carpeta
+`te-encuentran/`). El motor es el mismo; lo que cambia es la marca (colores,
+tipografía de acento, logo) para uso interno de la agencia.
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copia `.env.local.example` a `.env.local` y completa:
 
-## Learn More
+- `GEMINI_API_KEY`: motor de IA (análisis visual, preguntas, respuestas, plan
+  de acción). Con respaldo automático entre modelos si uno agota su cuota.
+- `GOOGLE_PAGESPEED_KEY`: notas de rendimiento, SEO y accesibilidad.
+- `TAVILY_API_KEY`: búsqueda web real para el espejo de visibilidad en IA
+  (plan gratuito, 1000 búsquedas al mes, sin tarjeta).
 
-To learn more about Next.js, take a look at the following resources:
+## Despliegue
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pensado para Vercel: conecta este repo desde el dashboard de Vercel
+(Import Project), configura las mismas variables de entorno de arriba, y
+cada push a `main` despliega automáticamente.
