@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Formulario from "@/components/Formulario";
 import EspejoGoogle from "@/components/EspejoGoogle";
 import EspejoIA from "@/components/EspejoIA";
@@ -201,20 +200,16 @@ export default function Home() {
   const puntajeGeneral = puntajesSecciones.length > 0 ? promedio(puntajesSecciones) : null;
 
   return (
-    <main className="min-h-screen bg-marca-blanco pb-24 print:min-h-0 print:pb-0">
+    <main className="min-h-screen bg-marca-crema pb-24 print:min-h-0 print:pb-0">
       <header className="border-b border-zinc-200 bg-white px-6 py-8 sm:py-10">
         <div className="mx-auto max-w-5xl">
-          <Image
-            src="/logo-polilla-digital.png"
-            alt="Polilla Digital"
-            width={651}
-            height={100}
-            className="h-7 w-auto sm:h-8"
-            priority
-          />
+          {/* Placeholder de texto mientras llega el archivo del logo real de Bigbuda */}
+          <span className="font-display text-2xl font-extrabold lowercase tracking-tight text-marca-negro">
+            bigbuda
+          </span>
           <div className="mt-8 text-center sm:mt-10">
-            <h1 className="bg-gradient-to-r from-marca-purpura via-marca-magenta to-marca-coral bg-clip-text font-display text-4xl font-extrabold tracking-tight text-transparent sm:text-6xl">
-              ¿Te encuentran?
+            <h1 className="font-display text-4xl font-extrabold tracking-tight text-marca-negro sm:text-6xl">
+              ¿Te <span className="text-marca-dorado">encuentran</span>?
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600 sm:text-xl">
               ¿Qué tan CRO es tu sitio? Revisemos si tu sitio está hecho para
@@ -253,13 +248,13 @@ export default function Home() {
               <div className="flex flex-wrap gap-3 print:hidden">
                 <button
                   onClick={() => window.print()}
-                  className="rounded-xl border border-marca-magenta/30 px-4 py-2 text-base font-semibold text-marca-purpura hover:bg-marca-magenta/5"
+                  className="rounded-xl border border-marca-dorado/40 px-4 py-2 text-base font-semibold text-marca-bronce hover:bg-marca-dorado/10"
                 >
                   Descargar informe (PDF)
                 </button>
                 <button
                   onClick={reiniciar}
-                  className="rounded-xl border border-marca-magenta/30 px-4 py-2 text-base font-semibold text-marca-purpura hover:bg-marca-magenta/5"
+                  className="rounded-xl border border-marca-dorado/40 px-4 py-2 text-base font-semibold text-marca-bronce hover:bg-marca-dorado/10"
                 >
                   Analizar otro sitio
                 </button>

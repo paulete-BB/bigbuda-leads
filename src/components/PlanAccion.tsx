@@ -99,7 +99,7 @@ export default function PlanAccion({
           )}
           {hayDatos && cargando && (
             <div className="flex items-center gap-3 text-zinc-500">
-              <span className="h-4 w-4 animate-spin rounded-full border-2 border-zinc-200 border-t-marca-magenta" />
+              <span className="h-4 w-4 animate-spin rounded-full border-2 border-zinc-200 border-t-marca-dorado" />
               <span className="text-base">Generando plan de acción...</span>
             </div>
           )}
@@ -111,13 +111,13 @@ export default function PlanAccion({
               <div className="mb-5 flex flex-wrap gap-3">
                 <button
                   onClick={copiar}
-                  className="rounded-lg border border-marca-magenta/30 px-4 py-2 text-sm font-semibold text-marca-purpura hover:bg-marca-magenta/5"
+                  className="rounded-lg border border-marca-dorado/40 px-4 py-2 text-sm font-semibold text-marca-bronce hover:bg-marca-dorado/10"
                 >
                   {copiado ? "Copiado ✓" : "Copiar"}
                 </button>
                 <button
                   onClick={descargar}
-                  className="rounded-lg border border-marca-magenta/30 px-4 py-2 text-sm font-semibold text-marca-purpura hover:bg-marca-magenta/5"
+                  className="rounded-lg border border-marca-dorado/40 px-4 py-2 text-sm font-semibold text-marca-bronce hover:bg-marca-dorado/10"
                 >
                   Descargar
                 </button>

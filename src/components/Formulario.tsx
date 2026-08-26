@@ -71,7 +71,7 @@ export default function Formulario({
             placeholder="misitio.cl"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-magenta focus:outline-none focus:ring-2 focus:ring-marca-magenta/20"
+            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-dorado focus:outline-none focus:ring-2 focus:ring-marca-dorado/20"
           />
         </div>
 
@@ -88,7 +88,7 @@ export default function Formulario({
             placeholder="ej: taller de frenos"
             value={rubro}
             onChange={(e) => setRubro(e.target.value)}
-            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-magenta focus:outline-none focus:ring-2 focus:ring-marca-magenta/20"
+            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-dorado focus:outline-none focus:ring-2 focus:ring-marca-dorado/20"
           />
         </div>
 
@@ -105,7 +105,7 @@ export default function Formulario({
             placeholder="ej: Ñuñoa, Santiago"
             value={ciudad}
             onChange={(e) => setCiudad(e.target.value)}
-            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-magenta focus:outline-none focus:ring-2 focus:ring-marca-magenta/20"
+            className="w-full rounded-xl border border-zinc-300 px-4 py-3 text-lg text-zinc-900 placeholder:text-zinc-400 focus:border-marca-dorado focus:outline-none focus:ring-2 focus:ring-marca-dorado/20"
           />
         </div>
 
@@ -118,7 +118,7 @@ export default function Formulario({
         <button
           type="submit"
           disabled={cargando}
-          className="w-full rounded-xl bg-gradient-to-r from-marca-magenta to-marca-coral px-6 py-4 text-lg font-bold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="w-full rounded-xl bg-marca-negro px-6 py-4 text-lg font-bold text-marca-crema transition-colors hover:bg-marca-bronce disabled:opacity-50"
         >
           {cargando ? "Analizando..." : "¿Me encuentran?"}
         </button>

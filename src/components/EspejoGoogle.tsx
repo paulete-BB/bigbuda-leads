@@ -38,7 +38,7 @@ export default function EspejoGoogle({
   return (
     <section>
       <div className="imprimir-titulo mb-6">
-        <span className="text-sm font-bold uppercase tracking-wide text-marca-purpura">
+        <span className="text-sm font-bold uppercase tracking-wide text-marca-bronce">
           Espejo 1
         </span>
         <h2 className="font-display text-3xl font-extrabold text-zinc-900 sm:text-4xl">

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f7f7;
-  --foreground: #0a0a0a;
+  --background: #f2eee3;
+  --foreground: #1e1a14;
 }
 
 @theme inline {
@@ -11,13 +11,11 @@
   --font-sans: var(--font-roboto);
   --font-display: var(--font-montserrat-alternates);
 
-  /* Paleta de marca (Polilla Digital) */
-  --color-marca-purpura: #6b2d8b;
-  --color-marca-magenta: #e31b7b;
-  --color-marca-coral: #e8513a;
-  --color-marca-naranja: #f7941d;
-  --color-marca-negro: #0a0a0a;
-  --color-marca-blanco: #f7f7f7;
+  /* Paleta de marca (Bigbuda) */
+  --color-marca-crema: #f2eee3;
+  --color-marca-negro: #1e1a14;
+  --color-marca-dorado: #b08a2e;
+  --color-marca-bronce: #8a6a22;
 }
 
 body {
@@ -27,13 +25,7 @@ body {
 }
 
 .barra-marca {
-  background: linear-gradient(
-    90deg,
-    var(--color-marca-purpura),
-    var(--color-marca-magenta),
-    var(--color-marca-coral),
-    var(--color-marca-naranja)
-  );
+  background: var(--color-marca-dorado);
 }
 
 /* El navegador no respeta los bordes de las tarjetas al paginar la

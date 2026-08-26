@@ -43,7 +43,7 @@ export default function TarjetaAnalisis({
       </div>
       {cargando && (
         <div className="flex items-center gap-3 text-zinc-500">
-          <span className="h-4 w-4 animate-spin rounded-full border-2 border-zinc-200 border-t-marca-magenta" />
+          <span className="h-4 w-4 animate-spin rounded-full border-2 border-zinc-200 border-t-marca-dorado" />
           <span className="text-base">Analizando...</span>
         </div>
       )}
@@ -55,7 +55,7 @@ export default function TarjetaAnalisis({
           {onReintentar && (
             <button
               onClick={onReintentar}
-              className="mt-3 rounded-lg border border-marca-magenta/30 bg-white px-4 py-2 text-sm font-semibold text-marca-purpura hover:bg-marca-magenta/5 print:hidden"
+              className="mt-3 rounded-lg border border-marca-dorado/40 bg-white px-4 py-2 text-sm font-semibold text-marca-bronce hover:bg-marca-dorado/10 print:hidden"
             >
               Reintentar
             </button>
