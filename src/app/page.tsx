@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Formulario from "@/components/Formulario";
 import EspejoGoogle from "@/components/EspejoGoogle";
 import EspejoIA from "@/components/EspejoIA";
@@ -203,10 +204,14 @@ export default function Home() {
     <main className="min-h-screen bg-marca-crema pb-24 print:min-h-0 print:pb-0">
       <header className="border-b border-zinc-200 bg-white px-6 py-8 sm:py-10">
         <div className="mx-auto max-w-5xl">
-          {/* Placeholder de texto mientras llega el archivo del logo real de Bigbuda */}
-          <span className="font-display text-2xl font-extrabold lowercase tracking-tight text-marca-negro">
-            bigbuda
-          </span>
+          <Image
+            src="/logo-bigbuda-n.png"
+            alt="Bigbuda"
+            width={582}
+            height={163}
+            className="h-7 w-auto sm:h-8"
+            priority
+          />
           <div className="mt-8 text-center sm:mt-10">
             <h1 className="font-display text-4xl font-extrabold tracking-tight text-marca-negro sm:text-6xl">
               ¿Te <span className="text-marca-dorado">encuentran</span>?
