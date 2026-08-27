@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat_Alternates, Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const montserratAlternates = Montserrat_Alternates({
-  variable: "--font-montserrat-alternates",
-  weight: ["600", "700", "800"],
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  weight: ["400", "500", "700"],
+// Misma familia (Inter) que usa el sitio de Bigbuda.
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -24,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${montserratAlternates.variable} ${roboto.variable} h-full antialiased print:h-auto`}
+      className={`${inter.variable} h-full antialiased print:h-auto`}
     >
       <body className="min-h-full flex flex-col print:min-h-0">
         <div className="barra-marca h-1.5 w-full" />
