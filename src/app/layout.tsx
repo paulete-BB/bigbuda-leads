@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "¿Te encuentran? — Informe gratuito de visibilidad online",
+  title: "Radiografía CRO de tu sitio | Bigbuda",
   description:
     "Descubre cómo te ve Google y cómo te ve la IA cuando alguien busca tu negocio.",
 };
