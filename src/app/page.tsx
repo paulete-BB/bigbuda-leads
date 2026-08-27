@@ -214,7 +214,7 @@ export default function Home() {
           />
           <div className="mt-8 text-center sm:mt-10">
             <h1 className="font-display text-4xl font-extrabold tracking-tight text-marca-negro sm:text-6xl">
-              ¿Te <span className="text-marca-dorado">encuentran</span>?
+              Radiografía <span className="text-marca-dorado">CRO</span> de tu sitio
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600 sm:text-xl">
               ¿Qué tan CRO es tu sitio? Revisemos si tu sitio está hecho para
