@@ -217,8 +217,9 @@ export default function Home() {
               Radiografía <span className="text-marca-dorado">CRO</span> de tu sitio
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-600 sm:text-xl">
-              ¿Qué tan CRO es tu sitio? Revisemos si tu sitio está hecho para
-              vender, si Google y las IAs lo encuentran y confían en tu marca.
+              ¿Qué tan optimizado para la venta está tu sitio? Revisemos si
+              está hecho para vender, si Google y las IAs lo encuentran y
+              confían en tu marca.
             </p>
           </div>
         </div>
